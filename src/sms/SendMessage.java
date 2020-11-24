@@ -53,8 +53,8 @@ public class SendMessage extends JFrame{
 		
 	private void initObject() {
 		grid = new GridLayout(3, 2);
-		laPhoneNumber = new JLabel("전화번호");
-		laMessage = new JLabel("메시지");
+		laPhoneNumber = new JLabel("수신인");
+		laMessage = new JLabel("내용");
 		tfPhoneNumber = new JTextField("");
 		tfMessage = new JTextField("");
 		btnSend = new JButton("전송");
@@ -63,11 +63,10 @@ public class SendMessage extends JFrame{
 	}
 	
 	private void initSetting() {
-		setTitle("메시지 보내기");
+		setTitle("문자 보내기");
 		setSize(300, 200);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		c.setLayout(grid);
-		grid.setVgap(5);
 	}
 	
 	private void initBatch() {
